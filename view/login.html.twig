@@ -1,0 +1,23 @@
+{% extends ('base.html.twig') %}
+
+{% block content %}
+
+    <div class="container">
+        <div class="jumbotron">
+            <h2 class="text-center">Login</h2>
+            <p class="text-center">Entrer votre pseudo et votre mot de passe, et cliquer sur  "envoyere"</p>
+            <form method="POST">
+                <div class="form-group">
+                    <label for="username">Pseudo</label>
+                    <input type="text" class="form-control" name="username" id="username" placeholder="Enter username">
+                </div>
+                <div class="form-group">
+                    <label for="password">Mot de pass </label>
+                    <input type="password" class="form-control" name="password" id="password" placeholder="Password">
+                </div>
+                <p class="text-center"><button type="submit" class="btn btn-default">envoyer</button></p>
+            </form>
+        </div>
+    </div>
+
+{% endblock %}

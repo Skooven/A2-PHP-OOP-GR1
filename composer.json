@@ -1,0 +1,22 @@
+{
+    "name": "Jordan/a2_php_oop_gr1",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Skooven",
+            "email": "afonso.jordann@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "Skooven\\PokemonBattle\\": "src"
+        }
+    },
+    "require": {
+        "doctrine/dbal":   "~2.5",
+        "doctrine/orm":    "~2.4",
+        "symfony/console": "~2.6",
+        "twig/twig": "~1.0"
+    }
+}

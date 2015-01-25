@@ -1,0 +1,44 @@
+{% extends 'base.html.twig' %}
+
+{% block content %}
+
+    <div class="container">
+        <div class="jumbotron">
+            <h2 class="text-center">Combattez !</h2>
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="alert alert-info" role="alert">
+                        <h3>Attaquant</h3>
+                        <p>Le pokemon attaquant est {{ strikerPokemon.name }}</p>
+                        <p>Type: {{ strikerPokemon.type }}</p>
+                        <p>HP: {{ strikerPokemon.hp }}</p>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <p class="text-center" style="padding-top: 75px;">VS</p>
+                </div>
+                <div class="col-md-5">
+                    <div class="alert alert-warning" role="alert">
+                        <h3>Defensseur</h3>
+                        <p>Le pokemon defensseur est  {{ defensorPokemon.name }}</p>
+                        <p>Type: {{ defensorPokemon.type }}</p>
+                        <p>HP: {{ defensorPokemon.hp }}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="alert alert-info" role="alert">
+                        <p>Dégats effectués par  {{ strikerPokemon.name }} : {{ pokemonAttack }}</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="alert alert-warning" role="alert">
+                        <p>{{ defensorPokemon.name }} a {{ defensorHp }} hp restant</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
